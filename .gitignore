@@ -1,0 +1,15 @@
+node_modules
+dist
+.env
+generated-assets.mjs
+.env
+.env.*
+!.env.example
+.folio-local/
+.vercel/
+dist/
+*.log
+
+.env.local
+.folio-local/
+.vercel/

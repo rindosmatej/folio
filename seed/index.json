@@ -1,0 +1,302 @@
+{
+  "subjects": [
+    {
+      "id": "informatika",
+      "title": "Informatika",
+      "description": "Prozkoumej počítač zevnitř a zjisti, jak jeho součástky spolupracují.",
+      "theme": "#205c8c",
+      "cover": "informatika.jpg"
+    },
+    {
+      "id": "grafika",
+      "title": "Grafika a fotografie",
+      "description": "Vyzkoušej si práci s obrazem, kompozicí a světlem na vlastním výřezu fotografie.",
+      "theme": "#a5543c",
+      "cover": "grafika.jpg"
+    },
+    {
+      "id": "kresleni",
+      "title": "Odborné kreslení",
+      "description": "Přenes rozměry skutečné stavby na papír a nauč se číst technický výkres.",
+      "theme": "#347663",
+      "cover": "kresleni.jpg"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "poznej-hardware-pocitace",
+      "sid": "informatika",
+      "title": "Poznej hardware počítače",
+      "intro": "Rozpoznej paměťový modul a vysvětli, co při tvorbě výkresu dělá procesor, RAM a SSD.",
+      "cover": "soucastka-ram",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "## Prozkoumej součástku\nProhlédni si fotografii. Všimni si černých pouzder na desce a zářezu mezi kontakty. Své poznatky zaznamenej do pracovního listu."
+        },
+        {
+          "kind": "image",
+          "file": "soucastka-ram",
+          "alt": "Zelená podlouhlá deska s řadou černých pouzder a zlatými kontakty.",
+          "caption": "Součástku si nejprve prohlédni bez nápovědy. Fotografoval SaltyCruton."
+        },
+        {
+          "kind": "file",
+          "file": "pracovni-list",
+          "label": "Stáhnout pracovní list"
+        },
+        {
+          "kind": "text",
+          "text": "## Sleduj cestu výkresu\n1. Představ si, že otevřeš uložený výkres. Jeho data se načtou z SSD do operační paměti.\n2. Otočíš pohled na model. Procesor vykoná instrukce programu a pracuje přitom s daty v paměti.\n3. Po uložení zůstane nová verze na SSD i po vypnutí počítače.\n\nPřiřaď v pracovním listu součástky k situacím A až C. Ve dvojici si vysvětlete, proč větší SSD samo o sobě nezvětší RAM."
+        },
+        {
+          "kind": "text",
+          "text": "## Ověř si znalosti\nAž učitel otevře soutěž, připoj se ke kvízu o pěti otázkách."
+        },
+        {
+          "kind": "quiz",
+          "quiz": "hardware-pocitace"
+        }
+      ]
+    },
+    {
+      "id": "uprava-fotografie",
+      "sid": "grafika",
+      "title": "Úprava fotografie",
+      "intro": "Z letecké fotografie Jihlavy vytvoř černobílý výřez s čitelnými liniemi střech a kontrastem dlažby.",
+      "cover": "jihlava-vysledek",
+      "blocks": [
+        {
+          "kind": "image",
+          "file": "jihlava-vysledek",
+          "alt": "Černobílý letecký pohled na Masarykovo náměstí v Jihlavě.",
+          "caption": "Možný výsledek. Sleduj, jak se plochy střech oddělují od náměstí."
+        },
+        {
+          "kind": "text",
+          "text": "## Otevři originál\nStáhni si barevnou fotografii a otevři ji v editoru, který umožňuje ořez a úpravu kontrastu. Originál si ponech pro srovnání."
+        },
+        {
+          "kind": "file",
+          "file": "jihlava-original",
+          "label": "Stáhnout originální fotografii Jihlavy"
+        },
+        {
+          "kind": "text",
+          "text": "## Vytvoř výřez\n1. Vyber poměr stran 3 : 2. Umísti hlavní motiv tak, aby ho okraj snímku náhodně neprotínal.\n2. Převeď výřez do odstínů šedi. Porovnej světlost střech a dlažby.\n3. Posuň černý a bílý bod jen tolik, aby v nejtmavších i nejsvětlejších místech zůstal detail."
+        },
+        {
+          "kind": "text",
+          "text": "## Ulož a porovnej\nExportuj JPEG o šířce 1 200 px. Polož vedle sebe originál a výsledek. Napiš dvě věty o tom, co tvůj výřez zdůraznil a který detail úprava naopak potlačila."
+        },
+        {
+          "kind": "text",
+          "text": "Fotografie pochází od autora mbem a je uvolněna jako CC0."
+        },
+        {
+          "kind": "link",
+          "url": "https://commons.wikimedia.org/wiki/File:NamestiZBalonu.jpg",
+          "label": "Fotografie a údaje o původu"
+        }
+      ]
+    },
+    {
+      "id": "pudorys-v-meritku",
+      "sid": "kresleni",
+      "title": "Půdorys v měřítku",
+      "intro": "Překresli obdélníkovou místnost v měřítku 1 : 50 a zkontroluj její rozměry vlastním měřením.",
+      "cover": "model-stavby",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "## Připrav si papír a pravítko\nSvětlé rozměry místnosti jsou 4 500 × 3 000 mm. Pro každý rozměr vypočti délku na výkrese. Pracuj celou dobu v milimetrech."
+        },
+        {
+          "kind": "text",
+          "text": "## Nakresli půdorys\n1. Každý skutečný rozměr vyděl 50.\n2. Narýsuj obdélník s vypočtenými stranami.\n3. Doprostřed jedné kratší strany vyznač otevřený průchod široký 900 mm.\n4. Přidej kóty skutečné délky a šířky místnosti. Pod výkres napiš měřítko."
+        },
+        {
+          "kind": "text",
+          "text": "## Zkontroluj výsledek\nNa papíře změř strany obdélníku. Mají měřit 90 mm a 60 mm, průchod 18 mm. Pokud některý rozměr nesedí, zkontroluj převod jednotek a výpočet měřítka."
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "hardware-pocitace",
+    "sid": "informatika",
+    "title": "Hardware počítače",
+    "questions": [
+      {
+        "id": "modul",
+        "text": "Kterou součástku vidíš na fotografii?",
+        "type": "one",
+        "options": [
+          {
+            "id": "ssd",
+            "text": "SSD"
+          },
+          {
+            "id": "ram",
+            "text": "Operační paměť RAM"
+          },
+          {
+            "id": "cpu",
+            "text": "Procesor"
+          }
+        ],
+        "correct": [
+          "ram"
+        ],
+        "seconds": 25,
+        "explanation": "Jde o modul RAM. Poznáš ho podle podlouhlé desky s paměťovými čipy a řadou kontaktů se zářezem.",
+        "media": [
+          {
+            "file": "soucastka-ram",
+            "alt": "Podlouhlá deska s černými pouzdry a kontakty podél hrany.",
+            "caption": "Fotografie součástky • SaltyCruton"
+          }
+        ]
+      },
+      {
+        "id": "vstup",
+        "text": "Která dvě zařízení slouží ke vstupu dat do počítače?",
+        "type": "many",
+        "options": [
+          {
+            "id": "keyboard",
+            "text": "Klávesnice"
+          },
+          {
+            "id": "monitor",
+            "text": "Monitor"
+          },
+          {
+            "id": "mouse",
+            "text": "Myš"
+          },
+          {
+            "id": "speaker",
+            "text": "Reproduktor"
+          }
+        ],
+        "correct": [
+          "keyboard",
+          "mouse"
+        ],
+        "seconds": 25,
+        "explanation": "Klávesnice a myš předávají počítači vstup od uživatele. Monitor a reproduktor zprostředkují výstup.",
+        "media": []
+      },
+      {
+        "id": "vypnuti",
+        "text": "Běžná operační paměť RAM po vypnutí napájení ztratí svůj obsah.",
+        "type": "bool",
+        "options": [
+          {
+            "id": "true",
+            "text": "Pravda"
+          },
+          {
+            "id": "false",
+            "text": "Nepravda"
+          }
+        ],
+        "correct": [
+          "true"
+        ],
+        "seconds": 25,
+        "explanation": "Operační paměť potřebuje pro uchování dat napájení. Uložený soubor na SSD přetrvá.",
+        "media": []
+      },
+      {
+        "id": "zvuk",
+        "text": "Přehraj si ukázku. Které zařízení převede signál z počítače na tóny, které slyšíš?",
+        "type": "one",
+        "options": [
+          {
+            "id": "mic",
+            "text": "Mikrofon"
+          },
+          {
+            "id": "speaker",
+            "text": "Reproduktor"
+          },
+          {
+            "id": "ssd",
+            "text": "SSD"
+          }
+        ],
+        "correct": [
+          "speaker"
+        ],
+        "seconds": 25,
+        "explanation": "Reproduktor rozkmitá membránu a tím vytvoří zvukové vlny. Mikrofon převádí zvuk opačným směrem.",
+        "media": [
+          {
+            "file": "zvuk-napoveda",
+            "caption": "Zvuková nápověda",
+            "transcript": "Ozvou se tři krátké tóny. Každý následující tón je vyšší."
+          }
+        ]
+      },
+      {
+        "id": "kapacita",
+        "text": "Počítač má dva paměťové moduly po 8 GB. Jaká je jejich celková kapacita?",
+        "type": "number",
+        "options": [],
+        "correct": [],
+        "seconds": 25,
+        "explanation": "Kapacity obou modulů se sečtou. 8 GB + 8 GB = 16 GB.",
+        "media": [],
+        "value": 16,
+        "tolerance": 0,
+        "unit": "GB"
+      }
+    ]
+  },
+  "files": [
+    {
+      "id": "soucastka-ram",
+      "path": "modul-ram.jpg",
+      "name": "pametovy-modul.jpg",
+      "type": "image/jpeg",
+      "sid": "informatika"
+    },
+    {
+      "id": "pracovni-list",
+      "path": "pracovni-list.pdf",
+      "name": "pracovni-list-hardware.pdf",
+      "type": "application/pdf",
+      "sid": "informatika"
+    },
+    {
+      "id": "zvuk-napoveda",
+      "path": "napoveda.wav",
+      "name": "tri-tony.wav",
+      "type": "audio/wav",
+      "sid": "informatika"
+    },
+    {
+      "id": "jihlava-original",
+      "path": "jihlava-original.jpg",
+      "name": "jihlava-z-balonu.jpg",
+      "type": "image/jpeg",
+      "sid": "grafika"
+    },
+    {
+      "id": "jihlava-vysledek",
+      "path": "jihlava-vysledek.jpg",
+      "name": "jihlava-cernobile.jpg",
+      "type": "image/jpeg",
+      "sid": "grafika"
+    },
+    {
+      "id": "model-stavby",
+      "path": "kresleni.jpg",
+      "name": "model-stavby.jpg",
+      "type": "image/jpeg",
+      "sid": "kresleni"
+    }
+  ]
+}

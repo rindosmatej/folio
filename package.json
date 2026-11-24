@@ -1,0 +1,37 @@
+{
+  "name": "folio-skola",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "npm run build && node scripts/dev.mjs",
+    "build": "esbuild src/main.tsx --bundle --minify --outfile=public/app.js && tailwindcss -i src/style.css -o public/style.css --minify && node scripts/worker-build.mjs",
+    "test": "node scripts/test-host.mjs",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.8.0",
+    "@supabase/supabase-js": "^2.119.2",
+    "file-type": "^21.3.0",
+    "qrcode": "1.5.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sql.js": "^1.13.0",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.6.0",
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6",
+    "esbuild": "^0.25.12",
+    "jsdom": "^26.1.0",
+    "jsqr": "^1.4.0",
+    "pngjs": "^5.0.0",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.8.3"
+  }
+}
