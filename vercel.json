@@ -1,9 +1,15 @@
-{
   "framework": null,
   "buildCommand": "npm run build",
   "outputDirectory": "web",
   "functions": {
-    "api/index.mjs": { "includeFiles": "dist/server/index.cjs" }
+    "api/index.mjs": {
+      "includeFiles": "dist/server/index.cjs"
+    }
   },
-  "rewrites": [{ "source": "/:path*", "destination": "/api/index?_folio_path=:path*" }]
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/api/index?_folio_path=:path*"
+    }
+  ]
 }
