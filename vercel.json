@@ -1,9 +1,21 @@
 {
   "framework": null,
   "buildCommand": "npm run build",
+  "installCommand": "npm ci",
   "outputDirectory": "web",
   "functions": {
-    "api/index.mjs": { "includeFiles": "dist/server/index.cjs" }
+    "api/index.mjs": {
+      "includeFiles": "dist/server/index.cjs"
+    }
   },
-  "rewrites": [{ "source": "/:path*", "destination": "/api/index?_folio_path=:path*" }]
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/index?_folio_path="
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/api/index?_folio_path=$1"
+    }
+  ]
 }
