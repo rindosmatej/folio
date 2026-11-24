@@ -66,6 +66,29 @@ export function createHandler({ db = DB, bucket = BUCKET, localOrigin } = {}) {
         !publicOrigin
       )
         throw Error("Chybí konfigurace Folia.");
+      const requiredEnv = [
+        "SUPABASE_URL",
+        "SUPABASE_SERVER_KEY",
+        "SUPABASE_ANON_KEY",
+        "FOLIO_ADMIN_AUTH_ID",
+        "FOLIO_PUBLIC_ORIGIN",
+        "FOLIO_ADMIN_ORIGIN",
+        "FOLIO_MODE",
+      ];
+
+      console.log(
+        "FOLIO ENV CHECK",
+        Object.fromEntries(
+          requiredEnv.map((key) => [key, env[key]?.trim() ? "OK" : "CHYBI"]),
+        ),
+      );
+
+      if (
+        (db === DB && (!env.SUPABASE_URL || !env.SUPABASE_SERVER_KEY)) ||
+        !publicOrigin
+      ) {
+        throw Error("Chybí konfigurace Folia.");
+      }
       const local = localOrigin || env.VERCEL_ENV === "development";
       const origin = (local ? "http://" : "https://") + req.headers.host;
       const ADMIN = adminMode && origin === adminOrigin;
